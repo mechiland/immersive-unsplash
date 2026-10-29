@@ -1,0 +1,9 @@
+node_modules/
+.wxt/
+.output/
+.DS_Store
+.playwright-cli/
+.playwright/
+output/
+*.local.*
+artifacts/

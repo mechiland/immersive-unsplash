@@ -1,0 +1,32 @@
+{
+  "name": "immersive-unsplash",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.20.0",
+  "type": "module",
+  "description": "A reversible desktop browsing layout for Unsplash",
+  "scripts": {
+    "dev": "wxt -b chrome",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "verify:live": "node scripts/live-check.mjs",
+    "verify:visual": "node scripts/visual-check.mjs",
+    "check": "pnpm typecheck && pnpm lint && pnpm test",
+    "build": "wxt build -b chrome --mv3 && node scripts/copy-build.mjs",
+    "zip": "wxt zip -b chrome --mv3 && node scripts/copy-build.mjs",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/cli": "^0.1.22",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.13.0",
+    "jsdom": "^30.1.3",
+    "playwright": "^1.64.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5",
+    "wxt": "^0.21.5"
+  }
+}
