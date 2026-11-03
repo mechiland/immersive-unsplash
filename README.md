@@ -84,3 +84,7 @@ CHROME_PATH='/path/to/chromium' mise exec -- pnpm verify:live
 此版本适配本次调查的英文 Unsplash 桌面 DOM。站点的标签、结构、实验版本、地区或语言发生变化时，可能回退原站或需要更新适配器。站点检查、登录状态和网络会影响实站自动化；失败会记录，不视为通过。投稿、退出、账户资料修改不在自动测试中执行最终操作。
 
 参考：[WXT content scripts](https://wxt.dev/guide/essentials/content-scripts.html)、[WXT manifest](https://wxt.dev/guide/essentials/config/manifest.html)、[Playwright 扩展测试](https://playwright.dev/docs/chrome-extensions)。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。

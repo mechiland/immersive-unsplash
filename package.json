@@ -1,6 +1,7 @@
 {
   "name": "immersive-unsplash",
   "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "packageManager": "pnpm@10.20.0",
   "type": "module",
